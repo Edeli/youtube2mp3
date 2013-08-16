@@ -1,0 +1,10 @@
+<!--
+	Youtube Video to MP3 Converter 1.0.0 Rev. 0
+	Author: Rawroot Edeli
+	E-mail: rawroot@gmail.com
+	Date: 08:15:2013:09:54:32
+	File info: Custom error file.
+-->
+
+<!-- SHTML Wrapper - 404 Not Found -->
+<!--#exec cgi="/cgi-sys/fourohfour.cgi" -->

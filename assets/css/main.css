@@ -1,0 +1,134 @@
+/* @Main */
+/*
+	Youtube Video to MP3 Converter 1.0.0 Rev. 0
+	Author: Rawroot Edeli
+	E-mail: rawroot@gmail.com
+	Date: 08:15:2013:10:05:19
+	File info: CSS file.
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+h1, h2, h3, h4, h4 {
+	padding-bottom: 5px;
+	margin: 15px 0;
+}
+
+body {
+	font-size: 13px;
+}
+
+h1 {
+	font-size: 200%;
+}
+
+h2 {
+	font-size: 180%;
+}
+
+h3 { 
+   font-size: 150%;
+}
+
+h4 {
+	font-size:  120%;
+}
+
+body {
+		line-height: 135%;
+		font-family: Arial, Helvetica, sans-serif;
+		color: #1D2D45;
+}
+
+a:link,
+a:visited {
+	/* color: see style css */
+	color: #819D26;
+	text-decoration: none;
+}
+
+div#bottom a:link,
+div#bottom a:visited {
+	color: #99CC00;
+}
+
+a:hover {
+
+	text-decoration: underline;
+}
+
+div#wrapper {
+	margin: 0 auto;
+	width: 868px;
+	padding-top: 18px;
+}
+
+div#header {
+	background: url(../images/header-bg.png) 0 0 repeat-x;
+}
+
+table.contentpaneopen, table.contentpane {
+  border-collapse: collapse;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+div#top {
+	color: #666;
+}
+
+div#top .padding {
+	padding:  15px;
+}
+
+div#footer {
+	background: url(../images/footer-bg.png) 0 0 repeat-x;
+}
+
+div#the-footer {
+	text-align: center;
+	color:#ccc;
+}
+
+table#fileinput {
+	width: 150%;
+	padding: 0;
+	text-align: center;
+}
+
+.form input[type="file"]{
+	z-index: 999;
+	line-height: 0;
+	font-size: 50px;
+	opacity: 0;
+	filter: alpha(opacity = 0);-ms-filter: "alpha(opacity=0)";
+	cursor: pointer;
+	_cursor: hand;
+	margin: 0;
+	padding:0;
+}
+  
+.add-photo-btn{
+	overflow:hidden;
+	cursor:pointer;
+	text-align:center;
+	background-color:#83b81a;
+	color:#fff;
+	display:block;
+	width:154px;
+	height:31px;
+	font-size:18px;
+	line-height:30px;
+}
+ input[type="text"]{
+   
+}

@@ -1,0 +1,36 @@
+#	Youtube Video to MP3 Converter 1.0.0 Rev. 0
+#	Author: Rawroot Edeli
+#	E-mail: rawroot@gmail.com
+#	Date: 08:15:2013:09:54:32
+#	File info: .htaccess file.
+
+# Prevent listing
+Options -Indexes
+IndexIgnore *
+
+# Enable mod_rewrite
+RewriteEngine On
+RewriteBase /
+
+# Remove index file
+RewriteCond %{THE_REQUEST} index\.(php|html) [NC]
+RewriteRule ^(([^/.]+/)*)index\.(php|html)$ http://jbe1.jetdomain.net/$1 [NC,R=301,L]
+
+# The Friendly URLs part
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?q=$1 [L,QSA]
+
+# Turn off for cross scripting hack
+php_flag register_globals Off
+
+# If supported output compression, use to speed up
+php_flag zlib.output_compression On
+php_value zlib.output_compression_level 5
+
+# Custom error pages
+ErrorDocument 400 /assets/error/400.shtml
+ErrorDocument 401 /assets/error/401.shtml
+ErrorDocument 403 /assets/error/403.shtml
+ErrorDocument 404 /assets/error/404.shtml
+ErrorDocument 500 /assets/error/500.shtml
